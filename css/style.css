@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+  --bg: #151515;
+  --fg: #fff;
+  --accent: #4ee1a0;
+  --gray: #242424;
+  --font: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #fff;
+}
+
+.header {
+  padding: 40px 5vw 0 5vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.1;
+}
+
+.underline {
+  border-bottom: 4px solid var(--accent);
+  display: inline-block;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
+.btn {
+  color: var(--fg);
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--accent);
+  padding: 0.5em 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.btn:hover {
+  color: var(--accent);
+}
+
+.profile-img-top {
+  position: absolute;
+  top: 40px;
+  right: 5vw;
+  width: 220px;
+  height: 260px;
+  background: #232323;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.profile-photo-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-placeholder {
+  width: 180px;
+  height: 220px;
+  background: #333;
+  border-radius: 8px;
+}
+
+.social {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.social a:hover{
+  color: #4ee1a0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 5vw;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  margin: 3rem 0;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.skill span:last-child {
+  color: #aaa;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.projects {
+  padding: 3rem 5vw;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects-header h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: var(--gray);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-img {
+  background: #222;
+  height: 160px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.tags {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.contact {
+  padding: 3rem 5vw;
+  background: var(--gray);
+  border-radius: 0 0 24px 24px;
+  margin-top: 3rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: #aaa;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 400px;
+}
+
+input, textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #333;
+  color: var(--fg);
+  font-size: 1rem;
+  padding: 0.7em 0.5em;
+  font-family: var(--font);
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.footer {
+  padding: 2rem 5vw 1rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-img {
+    margin: 2rem 0 0 0;
+    align-self: center;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
