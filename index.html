@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>philribeiro Portfolio</title>
+    <title>philrocha Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
-<body>
+<body id="top">
     <header class="header">
         <div class="header-content">
             <div>
-                <div class="logo">philribeiro</div>
+                <div class="logo">philrocha</div>
                 <h1>Nice to meet you!<br>I'm <span class="underline">Philipe Rocha.</span></h1>
                 <p class="subtitle">
                     Web developer in training, focused on front-end development with a solid foundation in HTML, CSS,
@@ -35,27 +36,32 @@
             <a href="https://www.linkedin.com/in/philipe-rocha-682a8b203/" target="_blank"><i
                     class="fab fa-linkedin-in"></i></a>
 
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/lipe.ribeiro1/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <!-- Email -->
+            <a href="mailto:liperocha97@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
 
-            <!-- Seta Download -->
-            <a href="/assets/document/Philipe_Ribeiro_CV.pdf" download>
-                <i class="fas fa-arrow-down"></i>
+            <!-- Download cv -->
+            <a href="/assets/document/philipe_rocha_CV.pdf" download>
+                <i class="fas fa-arrow-down"> download CV</i>
             </a>
         </nav>
         <div class="profile-img-top">
-            <img src="/assets/img/profile.jpg" alt="Seu nome" class="profile-photo-top">
+            <img src="./assets/img/profile.jpg" alt="My Profile photo" class="profile-photo-top">
         </div>
     </header>
 
+
     <section class="skills">
-        <div class="skill"><span>HTML</span><span></span></div>
-        <div class="skill"><span>CSS</span><span></span></div>
-        <div class="skill"><span>Javascript</span><span></span></div>
-        <div class="skill"><span>PHP</span><span></span></div>
-        <div class="skill"><span>MySQL</span><span></span></div>
-        <div class="skill"><span>Git</span><span></span></div>
-        <div class="skill"><span>Github</span><span></span></div>
+        <h2 class="skills-technologies">Technologies</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="./assets/img/skills/html_logo.png" alt="HTML logo"></div>
+            <div class="skill"><img src="./assets/img/skills/css_logo.png" alt="CSS logo"></div>
+            <div class="skill"><img src="./assets/img/skills/js_logo.png" alt="javascript logo"></div>
+            <div class="skill"><img src="./assets/img/skills/php_logo.png" alt="PHP logo"></div>
+            <div class="skill"><img src="./assets/img/skills/mysql_logo.png" alt="MySQL logo"></div>
+            <div class="skill"><img src="./assets/img/skills/github_logo.png" alt="Git logo"></div>
+            <div class="skill"><img src="./assets/img/skills/git_logo.png" alt="Github logo"></div>
+            <div class="skill"><img src="./assets/img/skills/bootstrap_logo.png" alt="Bootstrap logo"></div>
+        </div>
     </section>
 
     <section class="projects">
@@ -66,37 +72,39 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-img">
-                    <a href="https://visualtendas.pt/" target="_blank"><img src="/assets/img/visual_tendas.png"
-                            width="100%" height="100%" alt=""></a>
+                    <a href="https://visualtendas.pt/" target="_blank"><img src="./assets/img/visual_tendas.png"
+                            width="100%" height="100%" alt="project 1 image"></a>
                 </div>
                 <h3>VISUAL TENDAS WEBSITE</h3>
-                <p>My first project that l still working on it, is an institucional web page using tecnologies below.</p>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <p>Institucional website developed for a company. This website was designed to offer a fluid device experience, simple navigation and optimized structure. <br>
+                    Technologies used:
+                </p>
+                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT &nbsp; BOOTSTRAP</div>
             </div>
             <div class="project-card">
                 <div class="project-img"></div>
                 <h3>PROJECT 2</h3>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <!-- <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div> -->
             </div>
             <div class="project-card">
                 <div class="project-img"></div>
                 <h3>PROJECT 3</h3>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <!-- <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div> -->
             </div>
             <div class="project-card">
                 <div class="project-img"></div>
                 <h3>PROJECT 4</h3>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <!-- <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div> -->
             </div>
             <div class="project-card">
                 <div class="project-img"></div>
                 <h3>PROJECT 5</h3>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <!-- <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div> -->
             </div>
             <div class="project-card">
                 <div class="project-img"></div>
                 <h3>PROJECT 6</h3>
-                <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div>
+                <!-- <div class="tags">HTML &nbsp; CSS &nbsp; JAVASCRIPT</div> -->
             </div>
         </div>
     </section>
@@ -104,19 +112,20 @@
     <section class="contact" id="contact">
         <h2>Contact</h2>
         <p>
-            I would love to hear about your feedback and how I could help. Please fill in the form to send me a message and
+            I would love to hear about your feedback and how I could help. Please fill in the form to send me a message
+            and
             contact me in my social media.
         </p>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="NAME" required>
-            <input type="email" name="email" placeholder="EMAIL" required>
-            <textarea name="message" placeholder="MESSAGE" required></textarea>
+        <form action="contact.php" method="get" id="contactForm">
+            <input type="text" name="name" placeholder="NAME">
+            <input type="email" name="email" placeholder="EMAIL">
+            <textarea name="message" placeholder="MESSAGE"></textarea>
             <button type="submit" class="btn">SEND MESSAGE</button>
         </form>
     </section>
 
     <footer class="footer">
-        <div class="logo">philribeiro</div>
+        <div class="logo">philrocha</div>
         <nav class="social">
 
             <!-- GitHub -->
@@ -129,13 +138,15 @@
                 <i class="fab fa-linkedin-in"></i>
             </a>
 
-            <!-- Instagram -->
-            <a href="">
-                <i class="fab fa-instagram"></i>
+            <!-- Email -->
+            <a href="mailto:liperocha97@outlook.com">
+                <i class="fa-solid fa-envelope"></i>
                 </svg></a>
         </nav>
     </footer>
     <script src="./js/script.js"></script>
+
+    <a href="#top" class="back-to-top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
 </body>
 
 </html>

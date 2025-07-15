@@ -16,6 +16,30 @@ body {
   padding: 0;
 }
 
+.back-to-top{
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  background-color: #242424;
+  color: #4ee1a0;;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+.back-to-top{
+  background-color: #242424;
+  transform: scale(1.1);
+}
+
+.back-to-top{
+  display: none;
+}
+
 a{
   color: #fff;
 }
@@ -112,28 +136,34 @@ a{
   color: #4ee1a0;
 }
 
-.skills {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 3rem 5vw;
+.skills{
+  padding: 2rem;
+  margin: 2rem;
+  text-align: center;
   border-bottom: 1px solid #333;
   border-top: 1px solid #333;
-  margin: 3rem 0;
 }
 
-.skill {
+.skills-title{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-container{
   display: flex;
-  flex-direction: column;
-  font-size: 1.3rem;
-  font-weight: bold;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
-.skill span:last-child {
-  color: #aaa;
-  font-size: 1rem;
-  font-weight: 400;
+.skill img{
+  max-width: 80px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.skill img:hover{
+  transform: scale(1.1);
 }
 
 .projects {

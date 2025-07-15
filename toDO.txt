@@ -1,0 +1,12 @@
+AQUI VÃO CONTER INFORMAÇÕES SOBRE AS TAREFAS EM PROCESSO 
+E EXECUTADAS DE ACORDO COM O PROGRESSO DO PORTFÓLIO
+
+1. Fazer atualização na section skills.
+    - alteração na section skill, inserido logos das tecnologias,
+    e também foi feito ajuste no grid da mesma section, ajustando o tamanho da section.
+    - Foi feito a mudança do icone de instagram para envelope, e inserido link de email na section contact me.
+    Também foi adicionado "Download CV".
+    - adicionado botão que scrola a pagina para o topo novamente.
+
+
+
